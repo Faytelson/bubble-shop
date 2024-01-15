@@ -1,5 +1,6 @@
 import path from "path";
 import webpack from "webpack";
+import type { Configuration } from "webpack";
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 const { VueLoaderPlugin } = require('vue-loader')
@@ -10,11 +11,9 @@ export default (env: any) => {
     context: path.resolve(__dirname, "src"),
     entry: path.resolve(__dirname, "src", "main.js"),
     devtool: "inline-source-map",
-    // devServer: {
-    //   static: "dist",
-    //   watchFiles: ["src/*.html"],
-    //   hot: true,
-    // },
+    devServer: {
+      hot: true,
+    },
     plugins: [
       new HTMLWebpackPlugin({
         template: "index.html",

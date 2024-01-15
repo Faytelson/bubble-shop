@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
+    "@babel/register": "^7.23.7",
     "@types/node": "^20.11.0",
     "@types/webpack": "^4.41.38",
     "@types/webpack-dev-server": "^3.11.6",
