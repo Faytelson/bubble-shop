@@ -1,7 +1,15 @@
 import Vue from "vue";
+import VueRouter from "vue-router";
 import App from "./App.vue";
-import "./assets/styles/main.scss";
+import { routes } from "./router/routes";
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes,
+});
 
 new Vue({
+  router,
   render: (h) => h(App),
 }).$mount("#app");

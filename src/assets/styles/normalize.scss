@@ -117,3 +117,13 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  display: block;
+  background: none;
+  border: unset;
+}

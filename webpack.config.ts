@@ -3,7 +3,7 @@ import webpack from "webpack";
 import type { Configuration } from "webpack";
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require("vue-loader");
 
 export default (env: any) => {
   const config: webpack.Configuration = {
@@ -27,7 +27,16 @@ export default (env: any) => {
       rules: [
         {
           test: /\.(s(a|c)ss)$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+          use: [
+            MiniCssExtractPlugin.loader,
+            "css-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                additionalData: `@import "src/assets/styles/global.scss";`,
+              },
+            },
+          ],
         },
         {
           test: /\.vue$/,
@@ -47,6 +56,10 @@ export default (env: any) => {
           test: /\.tsx?$/,
           use: "ts-loader",
           exclude: /node_modules/,
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          type: "asset/resource",
         },
       ],
     },

@@ -1,0 +1,12 @@
+@mixin font($ff, $fz, $fw, $lh) {
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin pseudo() {
+    position: absolute;
+    display: block;
+    content: '';
+}
