@@ -4,7 +4,11 @@
       <Header></Header>
     </div>
     <div class="app__body">
-      <router-view></router-view>
+      <div class="app__container container">
+        <transition name="fade" mode="out-in">
+          <router-view :cards="cards"></router-view>
+        </transition>
+      </div>
     </div>
     <div class="app__footer"></div>
   </div>
@@ -19,7 +23,30 @@ export default {
     Header,
   },
   data() {
-    return {};
+    return {
+      cards: [
+        {
+          imgSrc: 'img_about_1.webp',
+          title: 'Company',
+        },
+        {
+          imgSrc: 'img_about_2.webp',
+          title: 'Work',
+        },
+        {
+          imgSrc: 'img_about_3.webp',
+          title: 'Study',
+        },
+        {
+          imgSrc: 'img_about_4.webp',
+          title: 'Clients',
+        },
+        {
+          imgSrc: 'img_about_5.webp',
+          title: 'Success',
+        },
+      ]
+    };
   },
   methods: {},
 };

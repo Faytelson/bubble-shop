@@ -61,6 +61,10 @@ export default (env: any) => {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
           type: "asset/resource",
         },
+        {
+          test: /\.(jpg|png|svg|webp|avif)$/i,
+          type: "asset/resource",
+        },
       ],
     },
     resolve: {

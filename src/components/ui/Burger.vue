@@ -47,4 +47,10 @@ export default {
     transform: translateY(-50%);
   }
 }
+
+@media screen and (min-width: 576px) {
+  .burger {
+    display: none;
+  }
+}
 </style>

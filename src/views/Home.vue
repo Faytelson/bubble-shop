@@ -1,5 +1,5 @@
 <template>
-  <div class="home">Home</div>
+  <div class="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eum, obcaecati natus optio minus asperiores consequatur mollitia voluptatibus autem nemo quod dolor ratione nostrum numquam? Tenetur praesentium repellendus iusto autem.</div>
 </template>
 
 <script>

@@ -1,0 +1,38 @@
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity $transition-main;
+}
+
+.fade-leave-active {
+  transition: opacity $transition-main;
+  opacity: 0;
+}
+
+.slide-enter-active {
+  animation: slide-in $animation-time;
+}
+
+.slide-leave-active {
+  animation: slide-out $animation-time;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(-0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
