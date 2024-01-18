@@ -62,7 +62,7 @@ export default (env: any) => {
           type: "asset/resource",
         },
         {
-          test: /\.(jpg|png|svg|webp|avif)$/i,
+          test: /\.(jpg|jpeg|png|svg|webp|avif)$/i,
           type: "asset/resource",
         },
       ],

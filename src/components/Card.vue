@@ -30,7 +30,7 @@ export default {
   }
 
   &__img-container {
-    height: 200px;
+    height: 300px;
     width: 100%;
     margin-bottom: 10px;
   }
@@ -42,18 +42,10 @@ export default {
   }
 }
 
-@media screen and (min-width: 375px) {
-  .card {
-    &__img-container {
-      height: 250px;
-    }
-  }
-}
-
 @media screen and (min-width: 425px) {
   .card {
     &__img-container {
-      height: 400px;
+      height: 350px;
     }
   }
 }
@@ -61,7 +53,7 @@ export default {
 @media screen and (min-width: 768px) {
     .card {
         &__img-container {
-          height: 700px;
+          height: 500px;
         }
       }
 }

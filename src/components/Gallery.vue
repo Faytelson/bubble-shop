@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -32,7 +32,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 </style>

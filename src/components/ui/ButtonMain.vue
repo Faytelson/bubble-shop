@@ -21,7 +21,7 @@ export default {
   computed: {
     classes() {
       let classes = [];
-      if (this.btnTypes) {
+      if (this.btnTypes.length !== 0) {
         this.btnTypes.forEach(type => {
             classes.push(`button_${type}`);
         })
