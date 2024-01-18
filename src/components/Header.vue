@@ -42,6 +42,7 @@ import Burger from "./ui/Burger.vue";
 import ButtonMain from "./ui/ButtonMain.vue";
 
 export default {
+  name: "Header",
   components: {
     Burger,
     ButtonMain,
